@@ -227,6 +227,30 @@
             margin-top: 0.35rem;
             font-size: 0.8rem;
         }
+
+        img { max-width: 120px; height: auto; display: block; margin: 15px auto; }
+
+        .asset-figure {
+            text-align: center;
+            margin: 1.25rem auto;
+        }
+
+        .asset-figure img {
+            max-width: 120px;
+            height: auto;
+            display: block;
+            margin: 15px auto;
+            border-radius: 8px;
+            background-color: #FFFFFF;
+            padding: 0.5rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .asset-figure figcaption {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 0.45rem;
+        }
     </style>
 </head>
 <body>
@@ -288,32 +312,36 @@
                             <tr>
                                 <th>試劑項目</th>
                                 <th>物理化學參數</th>
-                                <th>換算與配製公式 (C<sub>1</sub>V<sub>1</sub> = C<sub>2</sub>V<sub>2</sub>)</th>
+                                <th>換算與配製公式 ($C_1V_1 = C_2V_2$)</th>
                                 <th>最終配製體積</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td><strong>H<sub>2</sub>O<sub>2</sub> 原液 (Stock)</strong></td>
-                                <td>密度 d = 1.1 g/cm<sup>3</sup><br>分子量 MW = 34.1 g/mol<br>莫耳濃度 C<sub>1</sub> = 32.258 M (32,258 mM)</td>
-                                <td>32,258 mM &times; V<sub>1</sub> = 100 mM &times; 10 mL<br>V<sub>1</sub> = 1000 / 32,258 &asymp; 0.031 mL = <strong>31 &mu;L</strong></td>
+                                <td>密度 $d = 1.1\text{ g/cm}^3$<br>分子量 $\text{MW} = 34.1\text{ g/mol}$<br>莫耳濃度 $C_1 = 32.258\text{ M}$ ($32,258\text{ mM}$)</td>
+                                <td>$32,258\text{ mM} \times V_1 = 100\text{ mM} \times 10\text{ mL}$<br>$V_1 = 1000 / 32,258 \approx 0.031\text{ mL} =$ <strong>31 &mu;L</strong></td>
                                 <td>取 <strong>31 &mu;L</strong> H<sub>2</sub>O<sub>2</sub> 原液</td>
                             </tr>
                             <tr>
                                 <td><strong>稀釋溶劑 (Diluent)</strong></td>
                                 <td>無菌去離子水 (ddH<sub>2</sub>O) 或 BHI Broth</td>
-                                <td>V<sub>diluent</sub> = 10 mL &minus; 0.031 mL = <strong>9.969 mL</strong></td>
+                                <td>$V_{\text{diluent}} = 10\text{ mL} - 0.031\text{ mL} =$ <strong>9.969 mL</strong></td>
                                 <td>加入 <strong>9.969 mL</strong> 溶劑混勻，總體積 10 mL (100 mM)</td>
                             </tr>
                             <tr>
                                 <td><strong>第 1 管初始工作液 (2 mM H<sub>2</sub>O<sub>2</sub>)</strong></td>
-                                <td>目標濃度 C<sub>2</sub> = 2 mM<br>配製體積 V<sub>2</sub> = 10 mL</td>
-                                <td>100 mM &times; V<sub>1</sub> = 2 mM &times; 10 mL<br>V<sub>1</sub> = <strong>0.2 mL (200 &mu;L)</strong></td>
+                                <td>目標濃度 $C_2 = 2\text{ mM}$<br>配製體積 $V_2 = 10\text{ mL}$</td>
+                                <td>$100\text{ mM} \times V_1 = 2\text{ mM} \times 10\text{ mL}$<br>$V_1 =$ <strong>0.2 mL (200 &mu;L)</strong></td>
                                 <td><strong>9.8 mL</strong> BHI Broth + <strong>0.2 mL</strong> 100 mM H<sub>2</sub>O<sub>2</sub>（總體積 10 mL）</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+                <figure class="asset-figure">
+                    <img src="../assets/Micropipettes.png" alt="微量分注器 (Micropipettes)">
+                    <figcaption>圖 1：使用微量分注器（Micropipettes）精準量取 31 &mu;L H<sub>2</sub>O<sub>2</sub> 原液、200 &mu;L 工作母液與 250 &mu;L 接種菌液</figcaption>
+                </figure>
             </section>
 
             <section class="section-card">
@@ -394,6 +422,10 @@
                         <li>第 6 支藍蓋管（0 mM H<sub>2</sub>O<sub>2</sub>）需預先加入 5.0 mL BHI broth（含 1% 蔗糖）作為未處理之生長對照組（Positive growth / Untreated control）。</li>
                     </ul>
                 </div>
+                <figure class="asset-figure">
+                    <img src="../assets/tubes15ml.png" alt="15 mL 藍蓋培養管 (15 mL Centrifuge Tubes)">
+                    <figcaption>圖 2：以 15 mL 無菌藍蓋管（Tube 1–6）配置 2 mM 至 0.125 mM H<sub>2</sub>O<sub>2</sub> 二倍序列稀釋梯度與 0 mM 空白對照組</figcaption>
+                </figure>
             </section>
 
             <section class="section-card">

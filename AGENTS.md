@@ -23,7 +23,7 @@
 ## 5. 視覺與圖庫素材整合 (Asset Integration)
 請綜合使用以下兩種圖形資源來豐富 HTML 版面：
 1. **Google Material Icons (排版點綴)**：請在 HTML `<head>` 引入 Material Symbols 的 CDN。在「實驗日期」、「操作流程」、「結論」等標題旁，加上合適的 Material Icon 作為排版點綴。
-2. **Servier Medical Art (科學插圖)**：生成網頁前，**請先主動讀取 `/assets/` 資料夾內的檔案列表**。根據實驗內容挑選檔名最相關的圖片，以 `<img>` 標籤插入適當段落（最大寬度 300px，保持置中）。
+2. **Servier Medical Art (科學插圖)**：生成網頁前，**請先主動讀取 `/assets/` 資料夾內的檔案列表**。根據實驗內容挑選檔名最相關的圖片插入適當段落。⚠️ **【強制排版規則】**：必須在每一份 HTML 的 `<style>` 區塊內加入全域 CSS `img { max-width: 120px; height: auto; display: block; margin: 15px auto; }`，嚴禁讓圖片以原始解析度撐爆版面。
 3. **版權聲明**：有使用到 `/assets/` 內圖片的網頁，必須自動在頁尾 footer 加入一行細明體文字：「Images provided by Servier Medical Art (CC BY 3.0)」。
 
 ## 6. 強制更新規則 (Mandatory Update Rule)
