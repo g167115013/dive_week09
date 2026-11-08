@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微生物實驗 Protocol 與數據日誌庫</title>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-color: #0F4C81;
+            --secondary-color: #008080;
+            --bg-color: #F4F7F9;
+            --card-bg: #FFFFFF;
+            --text-main: #2C3E50;
+            --text-muted: #607D8B;
+            --border-color: #DCE4EC;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans TC", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: #FFFFFF;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(15, 76, 129, 0.15);
+            margin-bottom: 2rem;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        header p {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        .section-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+        }
+
+        .section-card h2 {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        ul.entry-list {
+            list-style: none;
+        }
+
+        ul.entry-list li {
+            padding: 0.85rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        ul.entry-list li:last-child {
+            border-bottom: none;
+        }
+
+        ul.entry-list a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+
+        ul.entry-list a:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+
+        .empty-hint {
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 2.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>微生物實驗 Protocol 與數據日誌庫</h1>
+            <p>Microbiology Experiment Protocols &amp; Data Logs Repository</p>
+        </header>
+
+        <main>
+            <section class="section-card">
+                <h2>實驗數據日誌 (Experiment Logs)</h2>
+                <!-- 最新日期在最上方 -->
+                <ul id="log-list" class="entry-list">
+                    <!-- 未來新增的實驗日誌連結將插入於此處最上方 -->
+                    <li>
+                        <span style="display: inline-block; background-color: #EBF3F9; color: #0F4C81; font-weight: 600; font-size: 0.85rem; padding: 0.15rem 0.55rem; border-radius: 4px; margin-right: 0.5rem;">2026-09-30</span>
+                        <a href="./logs/20260930_S_mutans_色素萃取前置與UA159培養及H2O2數據.html"><em>S. mutans</em> 681 色素萃取前置增菌、UA159 活化凍菌與 H<sub>2</sub>O<sub>2</sub> 耐受性時間序列測定 (2026-10-01 重測數據)</a>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.3rem;">執行 <em>S. mutans</em> 681 (OD<sub>600</sub> 0.4–0.6) 1% 繼代增菌培養、UA159 單一菌落液態活化與 20% Glycerol (&minus;80 &deg;C) 凍菌管製備；並完整記錄 2026/10/01 重測之 0–2 mM H<sub>2</sub>O<sub>2</sub> 每小時 (10:00–16:00) 三重複吸光值生長曲線數據。</p>
+                    </li>
+                    <li>
+                        <span style="display: inline-block; background-color: #EBF3F9; color: #0F4C81; font-weight: 600; font-size: 0.85rem; padding: 0.15rem 0.55rem; border-radius: 4px; margin-right: 0.5rem;">2006-09-03</span>
+                        <a href="./logs/20060903_S_mutans_H2O2耐受性測試.html">轉糖鏈球菌 (<em>Streptococcus mutans</em> 681) 過氧化氫 (H<sub>2</sub>O<sub>2</sub>) 耐受性測試</a>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.3rem;">配製 100 mM H<sub>2</sub>O<sub>2</sub> 母液，於 BHI + 1% sucrose 培養基中進行二倍序列稀釋（2、1、0.5、0.25、0.125 及 0 mM 對照組），各管以 1:20 比例接種 250 &mu;L <em>S. mutans</em> 681 菌液並置於 37 &deg;C 隔夜培養觀察生長情形。</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="section-card">
+                <h2>標準實驗步驟 (Standard Protocols)</h2>
+                <!-- 最新日期在最上方 -->
+                <ul id="protocol-list" class="entry-list">
+                    <!-- 未來新增的標準步驟連結將插入於此處最上方 -->
+                    <li>
+                        <span style="display: inline-block; background-color: #E0F2F1; color: #008080; font-weight: 600; font-size: 0.85rem; padding: 0.15rem 0.55rem; border-radius: 4px; margin-right: 0.5rem;">2026-09-30</span>
+                        <a href="./protocols/20260930_S_mutans_色素萃取前置培養與UA159凍菌製作步驟.html"><em>S. mutans</em> 681 色素萃取前置放大培養與 UA159 單一菌落活化暨 &minus;80 &deg;C 甘油凍菌製備標準步驟</a>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.3rem;">規範 <em>S. mutans</em> 681 色素萃取之 40 mL (1% v/v) 繼代增菌、UA159 自瓊脂平板挑取菌落活化，以及 4,000 rpm 離心收集菌體並以 BHI:Glycerol (4:1) 抗凍液分裝凍存之標準流程。</p>
+                    </li>
+                    <li>
+                        <span style="display: inline-block; background-color: #E0F2F1; color: #008080; font-weight: 600; font-size: 0.85rem; padding: 0.15rem 0.55rem; border-radius: 4px; margin-right: 0.5rem;">2006-09-03</span>
+                        <a href="./protocols/20060903_H2O2耐受性測試_序列稀釋與接種步驟.html">過氧化氫 (H<sub>2</sub>O<sub>2</sub>) 耐受性測試：二倍序列稀釋與接種標準操作步驟</a>
+                        <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.3rem;">由 32.258 M H<sub>2</sub>O<sub>2</sub> 原液配製 100 mM 工作母液，並於 15 mL 培養管執行 2 mM 至 0.125 mM 二倍序列稀釋與 1:20 菌液接種之標準作業流程。</p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>Microbiology Lab Repository &bull; Managed via AGENTS.md Standards</p>
+        </footer>
+    </div>
+</body>
+</html>

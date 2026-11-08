@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026-09-30 S. mutans 681 色素萃取前置培養、UA159 活化凍菌與 H2O2 耐受性時間序列測定</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-color: #0F4C81;
+            --secondary-color: #008080;
+            --bg-color: #F4F7F9;
+            --card-bg: #FFFFFF;
+            --text-main: #2C3E50;
+            --text-muted: #546E7A;
+            --border-color: #DCE4EC;
+            --accent-light: #EBF3F9;
+            --teal-light: #E0F2F1;
+            --warning-bg: #FFF8E1;
+            --warning-border: #FFB300;
+            --danger-bg: #FDEDEC;
+            --danger-border: #E74C3C;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans TC", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.65;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .back-nav {
+            margin-bottom: 1rem;
+        }
+
+        .back-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .back-nav a:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: #FFFFFF;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(15, 76, 129, 0.15);
+            margin-bottom: 2rem;
+        }
+
+        header .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #FFFFFF;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            margin-right: 0.5rem;
+        }
+
+        header h1 {
+            font-size: 1.7rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        header p {
+            font-size: 0.95rem;
+            opacity: 0.92;
+        }
+
+        .section-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+        }
+
+        .section-card h2 {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .section-card h3 {
+            color: var(--secondary-color);
+            font-size: 1.08rem;
+            margin: 1.2rem 0 0.6rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .material-symbols-outlined {
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+            vertical-align: middle;
+        }
+
+        header .material-symbols-outlined {
+            color: #FFFFFF;
+            font-size: 1.1rem;
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .meta-item {
+            background-color: var(--accent-light);
+            border-left: 4px solid var(--primary-color);
+            padding: 0.75rem 1rem;
+            border-radius: 4px;
+        }
+
+        .meta-item .label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .meta-item .value {
+            font-size: 0.98rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-top: 0.2rem;
+        }
+
+        .alert-contamination {
+            background-color: var(--danger-bg);
+            border-left: 4px solid var(--danger-border);
+            padding: 0.9rem 1.2rem;
+            border-radius: 4px;
+            margin-bottom: 1.2rem;
+            font-size: 0.93rem;
+        }
+
+        .note-box {
+            background-color: var(--warning-bg);
+            border-left: 4px solid var(--warning-border);
+            padding: 0.9rem 1.2rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+            font-size: 0.92rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            word-break: break-all;
+            margin: 0.5rem 0;
+            font-size: 0.92rem;
+        }
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 0.6rem 0.75rem;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: #FFFFFF;
+            font-weight: 600;
+        }
+
+        td.left-align, th.left-align {
+            text-align: left;
+        }
+
+        tr.time-group-start td {
+            border-top: 2px solid var(--primary-color);
+        }
+
+        tr.mean-row {
+            background-color: var(--teal-light);
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        ol.step-list {
+            padding-left: 1.4rem;
+        }
+
+        ol.step-list li {
+            margin-bottom: 0.55rem;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 2.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        footer .servier-credit {
+            font-family: "MingLiU", "PMingLiU", serif;
+            margin-top: 0.35rem;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="back-nav">
+            <a href="../index.html">
+                <span class="material-symbols-outlined">arrow_back</span>
+                返回總目錄 (Back to Repository)
+            </a>
+        </nav>
+
+        <header>
+            <div class="badge">
+                <span class="material-symbols-outlined">calendar_today</span>
+                計畫日期：2026-09-30
+            </div>
+            <div class="badge">
+                <span class="material-symbols-outlined">replay</span>
+                重測數據日期：2026-10-01
+            </div>
+            <h1><em>S. mutans</em> 681 色素萃取前置增菌、UA159 菌液活化與甘油凍菌製備暨 H<sub>2</sub>O<sub>2</sub> 耐受性生長曲線測定</h1>
+            <p>Pre-culture for Pigment Extraction, UA159 Broth Activation &amp; Glycerol Stock Preparation, and H<sub>2</sub>O<sub>2</sub> Susceptibility Time-Course Assay</p>
+        </header>
+
+        <main>
+            <section class="section-card">
+                <h2>
+                    <span class="material-symbols-outlined">event_note</span>
+                    實驗日期與基本資訊 (Experimental Overview)
+                </h2>
+                <div class="meta-grid">
+                    <div class="meta-item">
+                        <div class="label">實驗日期 (Date)</div>
+                        <div class="value">2026-09-30 (2026-10-01 重測)</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="label">實驗菌株 (Strains)</div>
+                        <div class="value"><em>S. mutans</em> 681 &amp; UA159</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="label">培養基與抗凍液 (Media)</div>
+                        <div class="value">BHI (+1% Sucrose) / 20% Glycerol</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="label">離心與保存條件 (Storage)</div>
+                        <div class="value">4,000 rpm (23 &deg;C, 10 min) / &minus;80 &deg;C</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-card">
+                <h2>
+                    <span class="material-symbols-outlined">format_list_numbered</span>
+                    操作流程 (Experimental Procedures)
+                </h2>
+
+                <h3>
+                    <span class="material-symbols-outlined">colorize</span>
+                    一、<em>S. mutans</em> 681 菌體色素萃取前置增菌培養 (Pigment Extraction – Part 1)
+                </h3>
+                <ol class="step-list">
+                    <li><strong>初始菌液吸光值確認：</strong>以分光光度計測定 <em>S. mutans</em> 681 初始種菌液之 $OD_{600}$，確認吸光值介於 <strong>0.4 – 0.6</strong> 之間（對數生長期中期）。</li>
+                    <li><strong>按 1% (v/v) 比例繼代接種：</strong>準備 40 mL 之 BHI + 1% (w/v) Sucrose 培養液，加入 <strong>400 &mu;L</strong> 初始菌液（$40\text{ mL} \times 1\% = 0.4\text{ mL} = 400\ \mu\text{L}$）混勻。</li>
+                    <li><strong>隔夜增菌培養：</strong>置入 37 &deg;C 恆溫培養箱進行隔夜靜置培養（Overnight incubation）。</li>
+                </ol>
+
+                <h3>
+                    <span class="material-symbols-outlined">biotech</span>
+                    二、<em>S. mutans</em> UA159 菌液活化製備 (Broth Preparation for Antioxidant Assay)
+                </h3>
+                <ol class="step-list">
+                    <li><strong>分裝培養基：</strong>於無菌離心管（Falcon conical tube）中加入 <strong>15 mL BHI broth</strong>（作為後續測試添加萃取色素後抗氧化能力之前置菌液）。</li>
+                    <li><strong>挑取單一菌落：</strong>取 <em>S. mutans</em> UA159 瓊脂平板（Agar plate），以無菌接種環（Inoculating loop）刮取 3–8 個菌落（刮取區域總長約 $\ge 1\text{ cm}$）。</li>
+                    <li><strong>懸浮與震盪混勻：</strong>將接種環浸入含 15 mL BHI broth 之離心管液面下，貼緊管壁輕柔摩擦將菌落團塊壓碎分散，隨後以漩渦震盪器（Vortex mixer）充分混勻。</li>
+                    <li><strong>隔夜活化培養：</strong>將離心管置入 37 &deg;C 恆溫培養箱隔夜培養（Overnight incubation）。</li>
+                </ol>
+
+                <h3>
+                    <span class="material-symbols-outlined">ac_unit</span>
+                    三、<em>S. mutans</em> UA159 甘油冷凍保種管製備 (Glycerol Stock Preparation – Part 1)
+                </h3>
+                <ol class="step-list">
+                    <li><strong>菌液培養：</strong>同上述步驟二之操作流程，先行製備 15 mL 之 <em>S. mutans</em> UA159 隔夜活化菌液。</li>
+                    <li><strong>離心收集菌體（Harvesting）：</strong>將 15 mL 菌液於 <strong>23 &deg;C、4,000 rpm（約 $2,500\text{--}3,000 \times g$）離心 10 min</strong>，小心傾倒棄去上清液（Supernatant），保留管底菌體沉澱（Bacterial pellet）。</li>
+                    <li><strong>抗凍液重懸（Resuspension）：</strong>於菌體沉澱中加入 <strong>3 mL 無菌抗凍保存液（BHI broth : Glycerol = 4 : 1 v/v，即含 20% Glycerol）</strong>，輕柔吹吸或震盪使菌體完全懸浮。</li>
+                    <li><strong>分裝與超低溫凍存：</strong>將 3 mL 菌懸液平均分裝至 <strong>3–4 支無菌冷凍小管（Cryovials，每管約 0.75–1.0 mL）</strong>，標示菌株與日期後移置 <strong>&minus;80 &deg;C 超低溫冷凍櫃</strong>長期保存。</li>
+                </ol>
+            </section>
+
+            <section class="section-card">
+                <h2>
+                    <span class="material-symbols-outlined">table_chart</span>
+                    實驗數據：H<sub>2</sub>O<sub>2</sub> 濃度梯度耐受性時間序列吸光值測定 (Time-Course Assay Data)
+                </h2>
+
+                <div class="alert-contamination">
+                    <strong>異常事件與重測紀錄（Incident &amp; Repeat Log）：</strong>
+                    2026/09/30 執行之初版實驗因發生微生物污染（Contamination）導致數據無效並予以廢棄；下表所列為 <strong>2026/10/01 重新執行（Repeat assay）</strong>之時間序列三重複（Triplicates, $n=3$）測定結果（10:00 至 16:00，每小時測定一次）。
+                </div>
+
+                <div style="overflow-x: auto; width: 100%;">
+                    <table style="word-break: break-all;">
+                        <thead>
+                            <tr>
+                                <th>測定時間 (Time)</th>
+                                <th>重複組別 (Replicate)</th>
+                                <th>2 mM H<sub>2</sub>O<sub>2</sub></th>
+                                <th>1 mM H<sub>2</sub>O<sub>2</sub></th>
+                                <th>0.5 mM H<sub>2</sub>O<sub>2</sub></th>
+                                <th>0.25 mM H<sub>2</sub>O<sub>2</sub></th>
+                                <th>0 mM H<sub>2</sub>O<sub>2</sub> (空白對照)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- 10:00 -->
+                            <tr class="time-group-start">
+                                <td rowspan="4"><strong>10:00</strong></td>
+                                <td>Rep 1</td>
+                                <td>0.029</td>
+                                <td>0.030</td>
+                                <td>0.035</td>
+                                <td>0.027</td>
+                                <td>0.026</td>
+                            </tr>
+                            <tr>
+                                <td>Rep 2</td>
+                                <td>0.040</td>
+                                <td>0.028</td>
+                                <td>0.033</td>
+                                <td>0.026</td>
+                                <td>0.028</td>
+                            </tr>
+                            <tr>
+                                <td>Rep 3</td>
+                                <td>0.033</td>
+                                <td>0.028</td>
+                                <td>0.031</td>
+                                <td>0.029</td>
+                                <td>0.029</td>
+                            </tr>
+                            <tr class="mean-row">
+                                <td>Mean &plusmn; SD</td>
+                                <td>0.034 &plusmn; 0.006</td>
+                                <td>0.029 &plusmn; 0.001</td>
+                                <td>0.033 &plusmn; 0.002</td>
+                                <td>0.027 &plusmn; 0.002</td>
+                                <td>0.028 &plusmn; 0.002</td>
+                            </tr>
+
+                            <!-- 11:00 -->
+                            <tr class="time-group-start">
+                                <td rowspan="4"><strong>11:00</strong></td>
+                                <td>Rep 1</td>
+                                <td>0.028</td>
+                                <td>0.032</td>
+                                <td>0.035</td>
+                                <td>0.029</td>
+                                <td>0.031</td>
+                            </tr>
+                            <tr>
+                                <td>Rep 2</td>
+                                <td>0.038</td>
+                                <td>0.030</td>
+                                <td>0.038</td>
+                                <td>0.026</td>
+                                <td>0.035</td>
+                            </tr>
+                            <tr>
+                                <td>Rep 3</td>
+                                <td>0.030</td>
+                                <td>0.040</td>
+                                <td>0.041</td>
+                                <td>0.035</td>
+                                <td>0.036</td>
+                            </tr>
+                            <tr class="mean-row">
+                                <td>Mean &plusmn; SD</td>
+                                <td>0.032 &plusmn; 0.005</td>
+                                <td>0.034 &plusmn; 0.005</td>
+                                <td>0.038 &plusmn; 0.003</td>
+                                <td>0.030 &plusmn; 0.005</td>
+                                <td>0.034 &plusmn; 0.003</td>
+                            </tr>
+
+                            <!-- 12:00 -->
+                            <tr class="time-group-start">
+                                <td rowspan="4"><strong>12:00</strong></td>
+                                <td>Rep 1</td>
+                                <td>0.030</td>
+                                <td>0.038</td>
+                                <td>0.063</td>
+                                <td>0.041</td>
+                                <td>0.043</td>
+                            </tr>
+                            <tr>
+                                <td>Rep 2</td>
+                                <td>0.036</td>
+                                <td>0.036</td>
+                                <td>0.045</td>
+                                <td>0.031</td>
+                                <td>0.043</td>
+                            </tr>
+                            <tr>
+                                <td>Rep 3</td>
+                                <td>0.034</td>
+                                <td>0.041</td>
+                                <td>0.051</td>
+                                <td>0.036</td>
+                                <td>0.042</td>
+                            </tr>
+                            <tr class="mean-row">
+                                <td>Mean &plusmn; SD</td>
+                                <td>0.033 &plusmn; 0.003</td>
+                                <td>0.038 &plusmn; 0.003</td>
+                                <td>0.053 &plusmn; 0.009</td>
+                                <td>0.036 &plusmn; 0.005</td>
+                                <td>0.043 &plusmn; 0.001</td>
+                            </tr>
+
+                            <!-- 13:00 -->
+                            <tr class="time-group-start">
+                                <td rowspan="4"><strong>13:00</strong></td>
+                                <td>Rep 1</td>
+                                <td>0.032</td>
+                                <td>0.037</td>
+                                <td>0.063</td>
+                                <td>0.043</td>
+                                <td>0.053</td>
+                            </tr>
+                            <tr>
+                                <td>Rep 2</td>
+                                <td>0.046</td>
+                                <td>0.035</td>
+                                <td>0.044</td>
+                                <td>0.041</td>
+                                <td>0.048</td>
+                            </tr>
+                            <tr>
+                                <td>Rep 3</td>
+                                <td>0.034</td>
+                                <td>0.040</td>
+                                <td>0.049</td>
+                                <td>0.053</td>
+                                <td>0.057</td>
+                            </tr>
+                            <tr class="mean-row">
+                                <td>Mean &plusmn; SD</td>
+                                <td>0.037 &plusmn; 0.008</td>
+                                <td>0.037 &plusmn; 0.003</td>
+                                <td>0.052 &plusmn; 0.010</td>
+                                <td>0.046 &plusmn; 0.006</td>
+                                <td>0.053 &plusmn; 0.005</td>
+                            </tr>
+
+                            <!-- 14:00 -->
+                            <tr class="time-group-start">
+                                <td rowspan="4"><strong>14:00</strong></td>
+                                <td>Rep 1</td>
+                                <td>0.024</td>
+                                <td>0.031</td>
+                                <td>0.068</td>
+                                <td>0.067</td>
+                                <td>0.086</td>
+                            </tr>
+                            <tr>
+                                <td>Rep 2</td>
+                                <td>0.044</td>
+                                <td>0.031</td>
+                                <td>0.068</td>
+                                <td>0.062</td>
+                                <td>0.085</td>
+                            </tr>
+                            <tr>
+                                <td>Rep 3</td>
+                                <td>0.038</td>
+                                <td>0.029</td>
+                                <td>0.064</td>
+                                <td>0.067</td>
+                                <td>0.071</td>
+                            </tr>
+                            <tr class="mean-row">
+                                <td>Mean &plusmn; SD</td>
+                                <td>0.035 &plusmn; 0.010</td>
+                                <td>0.030 &plusmn; 0.001</td>
+                                <td>0.067 &plusmn; 0.002</td>
+                                <td>0.065 &plusmn; 0.003</td>
+                                <td>0.081 &plusmn; 0.008</td>
+                            </tr>
+
+                            <!-- 15:00 -->
+                            <tr class="time-group-start">
+                                <td rowspan="4"><strong>15:00</strong></td>
+                                <td>Rep 1</td>
+                                <td>0.037</td>
+                                <td>0.051</td>
+                                <td>0.085</td>
+                                <td>0.077</td>
+                                <td>0.091</td>
+                            </tr>
+                            <tr>
+                                <td>Rep 2</td>
+                                <td>0.044</td>
+                                <td>0.052</td>
+                                <td>0.069</td>
+                                <td>0.079</td>
+                                <td>0.098</td>
+                            </tr>
+                            <tr>
+                                <td>Rep 3</td>
+                                <td>0.041</td>
+                                <td>0.062</td>
+                                <td>0.089</td>
+                                <td>0.073</td>
+                                <td>0.088</td>
+                            </tr>
+                            <tr class="mean-row">
+                                <td>Mean &plusmn; SD</td>
+                                <td>0.041 &plusmn; 0.004</td>
+                                <td>0.055 &plusmn; 0.006</td>
+                                <td>0.081 &plusmn; 0.011</td>
+                                <td>0.076 &plusmn; 0.003</td>
+                                <td>0.092 &plusmn; 0.005</td>
+                            </tr>
+
+                            <!-- 16:00 -->
+                            <tr class="time-group-start">
+                                <td rowspan="4"><strong>16:00</strong></td>
+                                <td>Rep 1</td>
+                                <td>0.043</td>
+                                <td>0.077</td>
+                                <td>0.115</td>
+                                <td>0.116</td>
+                                <td>0.134</td>
+                            </tr>
+                            <tr>
+                                <td>Rep 2</td>
+                                <td>0.062</td>
+                                <td>0.076</td>
+                                <td>0.107</td>
+                                <td>0.117</td>
+                                <td>0.147</td>
+                            </tr>
+                            <tr>
+                                <td>Rep 3</td>
+                                <td>0.053</td>
+                                <td>0.081</td>
+                                <td>0.121</td>
+                                <td>0.123</td>
+                                <td>0.139</td>
+                            </tr>
+                            <tr class="mean-row">
+                                <td>Mean &plusmn; SD</td>
+                                <td>0.053 &plusmn; 0.010</td>
+                                <td>0.078 &plusmn; 0.003</td>
+                                <td>0.114 &plusmn; 0.007</td>
+                                <td>0.119 &plusmn; 0.004</td>
+                                <td>0.140 &plusmn; 0.007</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="section-card">
+                <h2>
+                    <span class="material-symbols-outlined">analytics</span>
+                    結論與數據分析 (Conclusion &amp; Discussion)
+                </h2>
+                <ol class="step-list">
+                    <li><strong>劑量依賴性生長抑制（Dose-dependent inhibition）：</strong>由 2026-10-01 重測之 6 小時追蹤數據（10:00–16:00）可見，0 mM 空白對照組吸光值平均值由 $0.028 \pm 0.002$ 穩定上升至 $0.140 \pm 0.007$；隨 $\text{H}_2\text{O}_2$ 濃度升高，細菌增殖速率呈現明顯之劑量依賴性抑制趨勢。</li>
+                    <li><strong>亞致死濃度表現（0.25 mM 與 0.5 mM）：</strong>在 0.25 mM 與 0.5 mM $\text{H}_2\text{O}_2$ 條件下，14:00 後菌體開始進入顯著生長期，至 16:00 平均吸光值分別達 $0.119 \pm 0.004$ 與 $0.114 \pm 0.007$，顯示細菌對 $\le 0.5\text{ mM}$ 氧化壓力具備一定適應與耐受能力。</li>
+                    <li><strong>高濃度抑制效應（1 mM 與 2 mM）：</strong>1 mM 組遲至 15:00–16:00 才出現緩慢生長（16:00 平均為 $0.078 \pm 0.003$），而 2 mM 組於 6 小時內吸光值僅微幅變動（10:00 為 $0.034 \pm 0.006$，16:00 為 $0.053 \pm 0.010$），顯示 2 mM $\text{H}_2\text{O}_2$ 對菌體生長具有強烈抑制效果。</li>
+                </ol>
+            </section>
+        </main>
+
+        <footer>
+            <p>Microbiology Lab Repository &bull; Standardized Experiment Log</p>
+            <p class="servier-credit">Images provided by Servier Medical Art (CC BY 3.0)</p>
+        </footer>
+    </div>
+</body>
+</html>

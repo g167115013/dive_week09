@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2006-09-03 轉糖鏈球菌 (S. mutans 681) 過氧化氫耐受性測試實驗日誌</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-color: #0F4C81;
+            --secondary-color: #008080;
+            --bg-color: #F4F7F9;
+            --card-bg: #FFFFFF;
+            --text-main: #2C3E50;
+            --text-muted: #546E7A;
+            --border-color: #DCE4EC;
+            --accent-light: #EBF3F9;
+            --teal-light: #E0F2F1;
+            --warning-bg: #FFF8E1;
+            --warning-border: #FFB300;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans TC", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.65;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .back-nav {
+            margin-bottom: 1rem;
+        }
+
+        .back-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .back-nav a:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: #FFFFFF;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(15, 76, 129, 0.15);
+            margin-bottom: 2rem;
+        }
+
+        header .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #FFFFFF;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        header h1 {
+            font-size: 1.75rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        header p {
+            font-size: 0.95rem;
+            opacity: 0.92;
+        }
+
+        .section-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+        }
+
+        .section-card h2 {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .material-symbols-outlined {
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+            vertical-align: middle;
+        }
+
+        header .material-symbols-outlined {
+            color: #FFFFFF;
+            font-size: 1.1rem;
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .meta-item {
+            background-color: var(--accent-light);
+            border-left: 4px solid var(--primary-color);
+            padding: 0.75rem 1rem;
+            border-radius: 4px;
+        }
+
+        .meta-item .label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .meta-item .value {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-top: 0.2rem;
+        }
+
+        .formula-box {
+            background-color: var(--teal-light);
+            border-left: 4px solid var(--secondary-color);
+            padding: 1rem 1.25rem;
+            border-radius: 4px;
+            margin: 1rem 0;
+            font-size: 0.95rem;
+        }
+
+        .note-box {
+            background-color: var(--warning-bg);
+            border-left: 4px solid var(--warning-border);
+            padding: 0.9rem 1.2rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+            font-size: 0.92rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            word-break: break-all;
+            margin: 0.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 0.75rem 0.9rem;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: #FFFFFF;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #F8FAFC;
+        }
+
+        tr:hover {
+            background-color: var(--accent-light);
+        }
+
+        ol.step-list {
+            padding-left: 1.4rem;
+        }
+
+        ol.step-list li {
+            margin-bottom: 0.75rem;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 2.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        footer .servier-credit {
+            font-family: "MingLiU", "PMingLiU", serif;
+            margin-top: 0.35rem;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="back-nav">
+            <a href="../index.html">
+                <span class="material-symbols-outlined">arrow_back</span>
+                返回總目錄 (Back to Repository)
+            </a>
+        </nav>
+
+        <header>
+            <div class="badge">
+                <span class="material-symbols-outlined">calendar_today</span>
+                實驗日期：2006-09-03
+            </div>
+            <h1>轉糖鏈球菌 (<em>Streptococcus mutans</em> 681) 過氧化氫 (H<sub>2</sub>O<sub>2</sub>) 耐受性測試</h1>
+            <p>Hydrogen Peroxide Tolerance &amp; Two-Fold Serial Dilution Susceptibility Assay in BHI Broth</p>
+        </header>
+
+        <main>
+            <section class="section-card">
+                <h2>
+                    <span class="material-symbols-outlined">event_note</span>
+                    實驗日期與基本資訊 (Experimental Overview)
+                </h2>
+                <div class="meta-grid">
+                    <div class="meta-item">
+                        <div class="label">實驗日期 (Date)</div>
+                        <div class="value">2006-09-03</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="label">測試菌株 (Bacterial Strain)</div>
+                        <div class="value"><em>Streptococcus mutans</em> 681</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="label">基礎培養基 (Culture Medium)</div>
+                        <div class="value">BHI Broth (含 1% Sucrose)</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="label">培養條件 (Incubation)</div>
+                        <div class="value">37 &deg;C 恆溫隔夜培養 (O/N)</div>
+                    </div>
+                </div>
+                <p style="margin-top: 1rem;">
+                    <strong>實驗目的：</strong>利用二倍序列稀釋法（Two-fold serial dilution）於腦心浸出液培養基（Brain Heart Infusion broth, BHI broth，添加 1% 蔗糖）中建立 2 mM 至 0.125 mM 之過氧化氫（H<sub>2</sub>O<sub>2</sub>）濃度梯度，並設置 0 mM 空白對照組（Untreated negative control），接種 <em>S. mutans</em> 681 菌液進行隔夜培養，以評估該菌株對氧化壓力（Oxidative stress）之耐受性與最低抑制濃度範圍。
+                </p>
+            </section>
+
+            <section class="section-card">
+                <h2>
+                    <span class="material-symbols-outlined">calculate</span>
+                    母液配製與化學計量計算 (Stock Preparation &amp; Stoichiometry)
+                </h2>
+                <p>由市售高濃度過氧化氫原液配製 <strong>100 mM H<sub>2</sub>O<sub>2</sub> 工作母液（Working Stock Solution）</strong>，總體積設定為 10 mL：</p>
+                <div style="overflow-x: auto; width: 100%;">
+                    <table style="word-break: break-all;">
+                        <thead>
+                            <tr>
+                                <th>試劑項目</th>
+                                <th>物理化學參數</th>
+                                <th>換算與配製公式 (C<sub>1</sub>V<sub>1</sub> = C<sub>2</sub>V<sub>2</sub>)</th>
+                                <th>最終配製體積</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>H<sub>2</sub>O<sub>2</sub> 原液 (Stock)</strong></td>
+                                <td>密度 d = 1.1 g/cm<sup>3</sup><br>分子量 MW = 34.1 g/mol<br>莫耳濃度 C<sub>1</sub> = 32.258 M (32,258 mM)</td>
+                                <td>32,258 mM &times; V<sub>1</sub> = 100 mM &times; 10 mL<br>V<sub>1</sub> = 1000 / 32,258 &asymp; 0.031 mL = <strong>31 &mu;L</strong></td>
+                                <td>取 <strong>31 &mu;L</strong> H<sub>2</sub>O<sub>2</sub> 原液</td>
+                            </tr>
+                            <tr>
+                                <td><strong>稀釋溶劑 (Diluent)</strong></td>
+                                <td>無菌去離子水 (ddH<sub>2</sub>O) 或 BHI Broth</td>
+                                <td>V<sub>diluent</sub> = 10 mL &minus; 0.031 mL = <strong>9.969 mL</strong></td>
+                                <td>加入 <strong>9.969 mL</strong> 溶劑混勻，總體積 10 mL (100 mM)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>第 1 管初始工作液 (2 mM H<sub>2</sub>O<sub>2</sub>)</strong></td>
+                                <td>目標濃度 C<sub>2</sub> = 2 mM<br>配製體積 V<sub>2</sub> = 10 mL</td>
+                                <td>100 mM &times; V<sub>1</sub> = 2 mM &times; 10 mL<br>V<sub>1</sub> = <strong>0.2 mL (200 &mu;L)</strong></td>
+                                <td><strong>9.8 mL</strong> BHI Broth + <strong>0.2 mL</strong> 100 mM H<sub>2</sub>O<sub>2</sub>（總體積 10 mL）</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="section-card">
+                <h2>
+                    <span class="material-symbols-outlined">science</span>
+                    二倍序列稀釋與接種配置表 (Serial Dilution &amp; Inoculation Matrix)
+                </h2>
+                <p>準備 6 支 15 mL 無菌藍蓋培養管（編號 Tube 1–6），依下表執行二倍序列稀釋與等比例菌液接種：</p>
+                <div style="overflow-x: auto; width: 100%;">
+                    <table style="word-break: break-all;">
+                        <thead>
+                            <tr>
+                                <th>管號 (Tube)</th>
+                                <th>目標 H<sub>2</sub>O<sub>2</sub> 濃度</th>
+                                <th>預先加入 BHI Broth 體積</th>
+                                <th>序列稀釋移液操作 (Serial Transfer)</th>
+                                <th>稀釋後終體積</th>
+                                <th><em>S. mutans</em> 681 接種量 (1:20 v/v)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Tube 1</strong></td>
+                                <td><strong>2.0 mM</strong></td>
+                                <td>9.8 mL BHI + 0.2 mL (100 mM H<sub>2</sub>O<sub>2</sub>)</td>
+                                <td>混勻後抽取 5.0 mL 移入 Tube 2</td>
+                                <td>5.0 mL</td>
+                                <td>250 &mu;L (0.25 mL)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tube 2</strong></td>
+                                <td><strong>1.0 mM</strong></td>
+                                <td>5.0 mL BHI Broth</td>
+                                <td>加入來自 Tube 1 之 5.0 mL，混勻後抽取 5.0 mL 移入 Tube 3</td>
+                                <td>5.0 mL</td>
+                                <td>250 &mu;L (0.25 mL)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tube 3</strong></td>
+                                <td><strong>0.5 mM</strong></td>
+                                <td>5.0 mL BHI Broth</td>
+                                <td>加入來自 Tube 2 之 5.0 mL，混勻後抽取 5.0 mL 移入 Tube 4</td>
+                                <td>5.0 mL</td>
+                                <td>250 &mu;L (0.25 mL)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tube 4</strong></td>
+                                <td><strong>0.25 mM</strong></td>
+                                <td>5.0 mL BHI Broth</td>
+                                <td>加入來自 Tube 3 之 5.0 mL，混勻後抽取 5.0 mL 移入 Tube 5</td>
+                                <td>5.0 mL</td>
+                                <td>250 &mu;L (0.25 mL)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tube 5</strong></td>
+                                <td><strong>0.125 mM</strong></td>
+                                <td>5.0 mL BHI Broth</td>
+                                <td>加入來自 Tube 4 之 5.0 mL，混勻後<strong>抽取 5.0 mL 棄置</strong>以維持等體積</td>
+                                <td>5.0 mL</td>
+                                <td>250 &mu;L (0.25 mL)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tube 6 (對照組)</strong></td>
+                                <td><strong>0 mM (空白對照)</strong></td>
+                                <td>5.0 mL BHI Broth</td>
+                                <td>不添加 H<sub>2</sub>O<sub>2</sub>（陰性對照組，Negative Control）</td>
+                                <td>5.0 mL</td>
+                                <td>250 &mu;L (0.25 mL)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="note-box">
+                    <strong>實驗紀錄校正備註（Quality Control Note）：</strong>
+                    <ul>
+                        <li>原始筆記開頭簡記為「add 25 &mu;L bacteria liquid」，但依實驗步驟後段明確計算：每管 5 mL 培養基加入 <code>1/20</code> 體積之菌液（$5\text{ mL} \times \frac{1}{20} = 0.25\text{ mL} = 250\ \mu\text{L}$），故標準接種體積統一以 <strong>250 &mu;L</strong> 執行。</li>
+                        <li>第 6 支藍蓋管（0 mM H<sub>2</sub>O<sub>2</sub>）需預先加入 5.0 mL BHI broth（含 1% 蔗糖）作為未處理之生長對照組（Positive growth / Untreated control）。</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section-card">
+                <h2>
+                    <span class="material-symbols-outlined">format_list_numbered</span>
+                    操作流程 (Standard Experimental Procedure)
+                </h2>
+                <ol class="step-list">
+                    <li><strong>配製 100 mM H<sub>2</sub>O<sub>2</sub> 母液：</strong>取 9.969 mL 無菌水（或 BHI broth）置於無菌管中，加入 31 &mu;L 市售 32.258 M H<sub>2</sub>O<sub>2</sub> 原液，震盪混勻備用。</li>
+                    <li><strong>標示培養管：</strong>準備 6 支無菌 15 mL 藍蓋管，依序標示為 <code>2 mM</code>、<code>1 mM</code>、<code>0.5 mM</code>、<code>0.25 mM</code>、<code>0.125 mM</code> 及 <code>0 mM</code> H<sub>2</sub>O<sub>2</sub>。</li>
+                    <li><strong>配製最高濃度管（Tube 1, 2 mM）：</strong>於第 1 支藍蓋管中加入 9.8 mL BHI broth（含 1% sucrose）與 0.2 mL 之 100 mM H<sub>2</sub>O<sub>2</sub> 母液，充分混勻成 10 mL 之 2 mM H<sub>2</sub>O<sub>2</sub> 培養液。</li>
+                    <li><strong>執行二倍序列稀釋（Tube 2–5）：</strong>於第 2 至第 6 支藍蓋管中各預先加入 5.0 mL BHI broth。由第 1 管抽取 5.0 mL 移入第 2 管混勻；再由第 2 管抽取 5.0 mL 移入第 3 管混勻；依序傳遞至第 5 管（0.125 mM），最後由第 5 管抽取 5.0 mL 棄置，使第 1 至第 6 管最終體積皆為 5.0 mL。</li>
+                    <li><strong>菌液接種（Inoculation）：</strong>於第 1 至第 6 支藍蓋管中，分別加入 250 &mu;L（0.25 mL，即 1:20 體積比）之 <em>S. mutans</em> 681 菌液，輕柔混勻。</li>
+                    <li><strong>恆溫培養與觀察：</strong>將 6 支培養管全數置入 37 &deg;C 恆溫培養箱進行隔夜培養（Overnight incubation），隔日觀察各管菌液混濁度（Turbidity）並測定吸光值以評估細菌生長狀況。</li>
+                </ol>
+            </section>
+
+            <section class="section-card">
+                <h2>
+                    <span class="material-symbols-outlined">fact_check</span>
+                    結論與後續觀察重點 (Conclusion &amp; Follow-up)
+                </h2>
+                <p>
+                    本實驗設計完成 <em>S. mutans</em> 681 於 BHI + 1% sucrose 培養條件下對過氧化氫（0–2 mM）之耐受性測試配置。隔夜培養後將透過肉眼觀察菌液混濁度及分光光度計測定吸光值，比對 0 mM 對照組與各濃度梯度組之生長差異，藉此判定 <em>S. mutans</em> 681 之氧化壓力耐受閾值（MIC / 生長抑制濃度）。
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Microbiology Lab Repository &bull; Standardized Experiment Log</p>
+            <p class="servier-credit">Images provided by Servier Medical Art (CC BY 3.0)</p>
+        </footer>
+    </div>
+</body>
+</html>

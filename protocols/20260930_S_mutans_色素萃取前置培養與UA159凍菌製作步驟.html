@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocol: S. mutans 681 色素萃取前置培養與 UA159 菌液活化暨甘油凍菌製備標準步驟</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary-color: #0F4C81;
+            --secondary-color: #008080;
+            --bg-color: #F4F7F9;
+            --card-bg: #FFFFFF;
+            --text-main: #2C3E50;
+            --text-muted: #546E7A;
+            --border-color: #DCE4EC;
+            --accent-light: #EBF3F9;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans TC", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.65;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .back-nav {
+            margin-bottom: 1rem;
+        }
+
+        .back-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .back-nav a:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: #FFFFFF;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(15, 76, 129, 0.15);
+            margin-bottom: 2rem;
+        }
+
+        header .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #FFFFFF;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        header h1 {
+            font-size: 1.7rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+        }
+
+        .section-card h2 {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .material-symbols-outlined {
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+            vertical-align: middle;
+        }
+
+        header .material-symbols-outlined {
+            color: #FFFFFF;
+            font-size: 1.1rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            word-break: break-all;
+            margin: 0.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 0.75rem 0.9rem;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: #FFFFFF;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #F8FAFC;
+        }
+
+        ol.step-list {
+            padding-left: 1.4rem;
+        }
+
+        ol.step-list li {
+            margin-bottom: 0.65rem;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 2.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        footer .servier-credit {
+            font-family: "MingLiU", "PMingLiU", serif;
+            margin-top: 0.35rem;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="back-nav">
+            <a href="../index.html">
+                <span class="material-symbols-outlined">arrow_back</span>
+                返回總目錄 (Back to Repository)
+            </a>
+        </nav>
+
+        <header>
+            <div class="badge">
+                <span class="material-symbols-outlined">menu_book</span>
+                標準作業流程 (Standard Protocol) &bull; 建立日期：2026-09-30
+            </div>
+            <h1><em>S. mutans</em> 681 色素萃取前置放大培養與 UA159 單一菌落活化暨 &minus;80 &deg;C 甘油凍菌製備標準步驟</h1>
+            <p>SOP for <em>S. mutans</em> 681 Pigment Pre-culture, UA159 Colony Inoculation, and Cryopreservation</p>
+        </header>
+
+        <main>
+            <section class="section-card">
+                <h2>
+                    <span class="material-symbols-outlined">inventory_2</span>
+                    試劑與耗材規格摘要 (Reagents &amp; Consumables)
+                </h2>
+                <div style="overflow-x: auto; width: 100%;">
+                    <table style="word-break: break-all;">
+                        <thead>
+                            <tr>
+                                <th>實驗模組</th>
+                                <th>培養基／試劑配方</th>
+                                <th>關鍵參數指標</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Part 1: <em>S. mutans</em> 681 色素萃取前置培養</strong></td>
+                                <td>BHI Broth + 1% (w/v) Sucrose (40 mL)</td>
+                                <td>種菌液 $OD_{600} = 0.4\text{--}0.6$；接種比例 1% (v/v) = <strong>400 &mu;L</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Part 2: <em>S. mutans</em> UA159 液態菌液活化</strong></td>
+                                <td>BHI Broth (15 mL 於無菌 Falcon 離心管)</td>
+                                <td>刮取平板菌落 3–8 顆（約 $\ge 1\text{ cm}$），貼管壁研磨後 Vortex 混勻</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Part 3: <em>S. mutans</em> UA159 甘油凍菌製備</strong></td>
+                                <td>抗凍保存液：BHI Broth : Glycerol = 4 : 1 (v/v, 3 mL)</td>
+                                <td>4,000 rpm、23 &deg;C 離心 10 min；分裝 3–4 管凍存於 &minus;80 &deg;C</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="section-card">
+                <h2>
+                    <span class="material-symbols-outlined">science</span>
+                    操作流程 (Standard Operating Procedures)
+                </h2>
+                <ol class="step-list">
+                    <li><strong><em>S. mutans</em> 681 色素萃取前置培養 (Part 1)：</strong>
+                        <ul>
+                            <li>檢測初始活化菌液之 $OD_{600}$ 吸光值，確認落於 0.4–0.6 範圍內。</li>
+                            <li>於 40 mL 含 1% 蔗糖之 BHI 培養液中，按 1% 體積比加入 400 &mu;L 初始菌液。</li>
+                            <li>移置 37 &deg;C 恆溫培養箱隔夜培養（Overnight）。</li>
+                        </ul>
+                    </li>
+                    <li><strong><em>S. mutans</em> UA159 菌液製備：</strong>
+                        <ul>
+                            <li>於無菌 Falcon 離心管中加入 15 mL BHI broth。</li>
+                            <li>以無菌接種環自 UA159 瓊脂平板刮取 3–8 個菌落（總長約 1 cm 以上）。</li>
+                            <li>將接種環浸入 BHI broth 液面下並貼緊管壁輕擦壓碎菌塊，蓋緊管蓋後以 Vortex mixer 震盪混勻，置入 37 &deg;C 培養箱隔夜培養。</li>
+                        </ul>
+                    </li>
+                    <li><strong><em>S. mutans</em> UA159 凍菌管製備 (Part 1)：</strong>
+                        <ul>
+                            <li>取 15 mL 隔夜培養之 UA159 菌液，以 4,000 rpm、23 &deg;C 離心 10 min。</li>
+                            <li>於無菌操作台內小心撇去上清液，保留管底菌體沉澱（Pellet）。</li>
+                            <li>加入 3 mL 無菌抗凍液（BHI : Glycerol = 4 : 1）充分重懸菌體。</li>
+                            <li>分裝為 3–4 支無菌抗凍管（Cryovials），立即移置 &minus;80 &deg;C 冰箱保存。</li>
+                        </ul>
+                    </li>
+                </ol>
+            </section>
+
+            <section class="section-card">
+                <h2>
+                    <span class="material-symbols-outlined">verified</span>
+                    結論與無菌操作注意事項 (Conclusion &amp; Aseptic Precautions)
+                </h2>
+                <p>
+                    由瓊脂平板挑取菌落接種至液態培養基及進行離心重懸分裝時，管口開闔與傾倒上清液皆須嚴格於生物安全櫃（BSC）或無菌操作台內執行，避免環境雜菌污染（如 2026-09-30 批次曾發生之污染事件）。
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Microbiology Lab Repository &bull; Standard Operating Protocol</p>
+            <p class="servier-credit">Images provided by Servier Medical Art (CC BY 3.0)</p>
+        </footer>
+    </div>
+</body>
+</html>
